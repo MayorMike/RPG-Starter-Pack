@@ -1,3 +1,6 @@
+//Checks if dialog exists. If so, pauses enemies. 
+if (instance_exists(obj_dialog)) exit;
+
 //Moves horizonal and vertical. Clamped between target - x or y.
 var _hor = clamp(target_x - x, -1, 1);
 var _ver = clamp(target_y - y, -1, 1);
