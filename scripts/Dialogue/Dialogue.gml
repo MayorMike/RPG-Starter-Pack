@@ -14,6 +14,18 @@ char_colors = {
     "Singh": c_aqua,
     
 }
+
+room1_end = [
+{
+    name: "Cross",
+    msg: "You have reached the end!\nBut there is more."
+},
+{
+    name:"Cross",
+    msg: "Please procees to the next area."
+},
+]
+
 //Remember. If add new Character, need to add colour otherwise it'll crash. 
 
 welcome_dialog = [

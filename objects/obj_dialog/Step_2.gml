@@ -11,6 +11,8 @@ else if (keyboard_check_pressed(input_key)) {
     current_message++;//Goes to next message in array
     if (current_message >= array_length(messages)){//Checks to see if there is another message in the array
         instance_destroy();
+        
+        if (next_room) room_goto_next();
     }
     else {
         current_char = 0;//If there is, start from beginning and display message
