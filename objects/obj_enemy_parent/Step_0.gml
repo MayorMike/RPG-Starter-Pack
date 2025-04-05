@@ -1,3 +1,8 @@
+if (alarm[1] >= 0){
+    target_x = x + kb_x;
+    target_y = y + kb_y;
+}
+
 //Checks if dialog exists. If so, pauses enemies. 
 if (instance_exists(obj_dialog)) exit;
 

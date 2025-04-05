@@ -12,6 +12,8 @@ level = 1
 xp = 0
 xp_require = 100
 
+facing = 0;
+
 function add_xp(_xp_to_add){
     xp += _xp_to_add;
     if (xp >= xp_require){
