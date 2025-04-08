@@ -6,8 +6,8 @@
   "name":"obj_carry_data",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Controller Objects",
+    "path":"folders/Objects/Controller Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,
