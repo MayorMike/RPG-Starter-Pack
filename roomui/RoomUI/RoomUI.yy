@@ -5,9 +5,9 @@
     {"$GMRUILayer":"v1","%Name":"PauseLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"PausePanel","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"ResumeButton","alignItems":2,"children":[
-                {"$GMRFlexPanel":"","%Name":"FlexPanel","alignItems":2,"children":[
+                {"$GMRFlexPanel":"","%Name":"Icon","alignItems":2,"children":[
                     {"$GMRSpriteGraphic":"v1","%Name":"graphic_71F11A0D","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_71F11A0D","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ui_resume","path":"sprites/spr_ui_resume/spr_ui_resume.yy",},"x":0.0,"y":0.0,},
-                  ],"flexDirection":0,"height":{"unit":3,"value":24.0,},"justifyContent":1,"name":"FlexPanel","nodeColour":4287383794,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":24.0,},},
+                  ],"flexDirection":0,"height":{"unit":3,"value":24.0,},"justifyContent":1,"name":"Icon","nodeColour":4287383794,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":24.0,},},
                 {"$GMRFlexPanel":"","%Name":"Text","alignItems":2,"children":[
                     {"$GMRTextItem":"v2","%Name":"text_27094481","alignment":0,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"fontId":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"frameH":0.0,"frameW":0.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_27094481","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"text":"Resume","wrap":false,"x":0.0,"xorigin":0.0,"y":0.0,"yorigin":0.0,},
                   ],"flexDirection":0,"height":{"unit":3,"value":38.0,},"justifyContent":1,"marginBottom":{"unit":1,"value":6.0,},"marginLeft":{"unit":1,"value":16.0,},"marginRight":{"unit":1,"value":16.0,},"marginTop":{"unit":1,"value":6.0,},"name":"Text","nodeColour":4282948082,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":165.0,},},
@@ -37,7 +37,7 @@
               ],"flexDirection":2,"height":{"unit":3,"value":48.0,},"justifyContent":1,"name":"QuitButton","nodeColour":4291555912,"paddingBottom":{"unit":1,"value":10.0,},"paddingLeft":{"unit":1,"value":10.0,},"paddingRight":{"unit":1,"value":10.0,},"paddingTop":{"unit":1,"value":10.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":48.0,},},
             {"$GMRSpriteGraphic":"v1","%Name":"graphic_5E92F468","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_5E92F468","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ui_box","path":"sprites/spr_ui_box/spr_ui_box.yy",},"x":0.0,"y":0.0,},
           ],"flexDirection":0,"gapRow":10.0,"height":{"unit":1,"value":400.0,},"justifyContent":1,"name":"PausePanel","nodeColour":4293347570,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":300.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"PauseLayer","nodeColour":4282970806,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"PauseLayer","nodeColour":4282970806,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"SettingsLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"Panel","alignItems":1,"children":[
             {"$GMRFlexPanel":"","%Name":"Setting","alignItems":2,"children":[
@@ -85,7 +85,7 @@
               ],"flexDirection":2,"height":{"unit":3,"value":48.0,},"justifyContent":1,"name":"BackButton","nodeColour":4291555912,"paddingBottom":{"unit":1,"value":10.0,},"paddingLeft":{"unit":1,"value":10.0,},"paddingRight":{"unit":1,"value":10.0,},"paddingTop":{"unit":1,"value":10.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":48.0,},},
           ],"flexDirection":0,"gapRow":10.0,"height":{"unit":2,"value":100.0,},"justifyContent":0,"name":"Panel","nodeColour":4294074696,"paddingBottom":{"unit":1,"value":32.0,},"paddingLeft":{"unit":1,"value":32.0,},"paddingRight":{"unit":1,"value":32.0,},"paddingTop":{"unit":1,"value":32.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_4F3B406D","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4F3B406D","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ui_box","path":"sprites/spr_ui_box/spr_ui_box.yy",},"x":0.0,"y":0.0,},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"SettingsLayer","nodeColour":4282933490,"paddingBottom":{"unit":1,"value":32.0,},"paddingLeft":{"unit":1,"value":32.0,},"paddingRight":{"unit":1,"value":32.0,},"paddingTop":{"unit":1,"value":32.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"SettingsLayer","nodeColour":4282933490,"paddingBottom":{"unit":1,"value":32.0,},"paddingLeft":{"unit":1,"value":32.0,},"paddingRight":{"unit":1,"value":32.0,},"paddingTop":{"unit":1,"value":32.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
   ],
   "locked":false,
   "name":"RoomUI",
@@ -96,5 +96,5 @@
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",
   "viewspaceChildren":[],
-  "visible":false,
+  "visible":true,
 }

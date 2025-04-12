@@ -1,3 +1,3 @@
-enable = !enable;
+enabled = !enabled;
 
-image_alpha = 0.4 + enable * 0.6;
+image_alpha = 0.4 + enabled * 0.6;
