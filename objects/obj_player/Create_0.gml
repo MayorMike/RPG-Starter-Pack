@@ -1,7 +1,7 @@
 move_speed = 1;
 
 //Check for collisions with Tiles_Col
-tilemap = layer_tilemap_get_id("Tiles_Col");
+tilemap = [layer_tilemap_get_id("Tiles_Col"), obj_door_parent];
 
 hp = 10;
 hp_total = 10;
