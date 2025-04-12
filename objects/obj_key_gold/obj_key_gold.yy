@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_health_small",
+  "%Name":"obj_key_gold",
   "eventList":[],
   "managed":true,
-  "name":"obj_health_small",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_potion_parent","path":"objects/obj_potion_parent/obj_potion_parent.yy",},"propertyId":{"name":"healing","path":"objects/obj_potion_parent/obj_potion_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
-  ],
+  "name":"obj_key_gold",
+  "overriddenProperties":[],
   "parent":{
     "name":"Items",
     "path":"folders/Objects/Items.yy",
   },
   "parentObjectId":{
-    "name":"obj_potion_parent",
-    "path":"objects/obj_potion_parent/obj_potion_parent.yy",
+    "name":"obj_key_parent",
+    "path":"objects/obj_key_parent/obj_key_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_health_small",
-    "path":"sprites/spr_health_small/spr_health_small.yy",
+    "name":"spr_key_gold",
+    "path":"sprites/spr_key_gold/spr_key_gold.yy",
   },
   "spriteMaskId":null,
   "visible":true,

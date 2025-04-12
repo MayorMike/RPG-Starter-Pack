@@ -1,0 +1,1 @@
+audio_play_sound(snd_key_pickup, 0, false);

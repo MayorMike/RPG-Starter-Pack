@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_potion_parent","path":"objects/obj_potion_parent/obj_potion_parent.yy",},"propertyId":{"name":"healing","path":"objects/obj_potion_parent/obj_potion_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Items",
+    "path":"folders/Objects/Items.yy",
   },
   "parentObjectId":{
     "name":"obj_potion_parent",
