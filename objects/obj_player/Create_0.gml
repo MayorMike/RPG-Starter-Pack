@@ -4,7 +4,7 @@ move_speed = 1;
 tilemap = layer_tilemap_get_id("Tiles_Col");
 
 hp = 10;
-hp_total = hp;
+hp_total = 10;
 damage = 1;
 charge = 0
 
@@ -21,7 +21,7 @@ function add_xp(_xp_to_add){
         xp -= xp_require;
         xp_require *= 1.4; //Increase by 40%
         
-        hp_total =+ 5;//hp_total is now 5 additional points
+        hp_total += 5;//hp_total is now 5 additional points
         hp = hp_total;
         damage += 0.8;//Damage increased by 8%?
         
