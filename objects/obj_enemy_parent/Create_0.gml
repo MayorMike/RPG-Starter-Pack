@@ -3,7 +3,8 @@ target_y = y;
 
 alarm[0] = 60;
 
-tilemap = [layer_tilemap_get_id("Tiles_Col"), obj_door_parent];
+//Enemy collides with enemy, tile_map_col and obj_door_parent
+tilemap = [layer_tilemap_get_id("Tiles_Col"), obj_door_parent, obj_enemy_parent];
 
 hp_total = hp;
 

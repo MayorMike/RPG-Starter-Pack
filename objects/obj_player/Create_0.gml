@@ -11,6 +11,8 @@ charge = 0
 level = 1
 xp = 0
 xp_require = 100
+door_key = 0;//Number of door keys player is holding - Gold Key
+chest_key = 0; //Number of chest keys player is holding - Silver Key
 
 facing = 0;
 

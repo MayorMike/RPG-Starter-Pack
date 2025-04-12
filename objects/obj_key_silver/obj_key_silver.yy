@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_key_silver",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_key_parent","path":"objects/obj_key_parent/obj_key_parent.yy",},"propertyId":{"name":"key_type","path":"objects/obj_key_parent/obj_key_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+  ],
   "parent":{
     "name":"Items",
     "path":"folders/Objects/Items.yy",
