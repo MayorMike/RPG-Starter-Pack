@@ -5,6 +5,7 @@ if (alarm[0] < 0){
     
     if (hp <= 0){
         room_restart();
+        show_debug_message("You Died!");
     }
 }
 //Code for Turn-Based Combat. Left here for now, but unused. 
