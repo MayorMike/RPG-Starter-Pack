@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_door_verticle",
-  "bboxMode":2,
+  "bboxMode":0,
   "bbox_bottom":31,
-  "bbox_left":0,
-  "bbox_right":15,
+  "bbox_left":6,
+  "bbox_right":9,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
