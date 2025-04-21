@@ -4,10 +4,10 @@ if (alarm[0] < 0){
     image_blend = c_red;
     audio_play_sound(snd_player_hit, 0, false);
     
-    if (hp <= 0){
+    /*if (hp <= 0){
         room_restart();
         show_debug_message("You Died!");
-    }
+    }*/
 }
 //Code for Turn-Based Combat. Left here for now, but unused. 
 /*if (instance_exists(obj_battle_switcher)) exit;
