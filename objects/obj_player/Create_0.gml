@@ -7,6 +7,8 @@ hp = 10;
 hp_total = 10;
 damage = 1;
 charge = 0
+stamina = 10;
+stamina_total = 10;
 
 level = 1
 xp = 0

@@ -9,6 +9,14 @@ var _dir = point_direction(0, 0, _hor, _ver);
 _hor = lengthdir_x(_len, _dir);
 _ver = lengthdir_y(_len, _dir);
 
+//Run when Left-Shift held down
+if keyboard_check(vk_lshift){
+    move_speed = 1.5;
+}
+else{
+    move_speed = 1;
+}
+
 move_and_collide(_hor * move_speed, _ver * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
 
 //If either true, code will run. 

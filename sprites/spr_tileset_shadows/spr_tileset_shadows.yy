@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_tileset_shadows",
   "bboxMode":0,
-  "bbox_bottom":5,
+  "bbox_bottom":15,
   "bbox_left":0,
   "bbox_right":47,
   "bbox_top":0,
