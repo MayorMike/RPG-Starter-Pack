@@ -14,8 +14,18 @@ _ver = lengthdir_y(_len, _dir);
 if (keyboard_check(vk_lshift) && moving && stamina > 0) {
     move_speed = 1.5;
     stamina -= 0.5;
+
+    // Reset regen delay to 1 second
+    stamina_regen_timer = game_get_speed(gamespeed_fps);
 } else {
     move_speed = 1;
+
+    // Decrease the regen delay if not sprinting
+    if (stamina_regen_timer > 0) {
+        stamina_regen_timer -= 1;
+    } else if (stamina < stamina_total) {
+        stamina += 0.25;
+    }
 }
 
 move_and_collide(_hor * move_speed, _ver * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
