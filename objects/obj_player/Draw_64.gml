@@ -22,7 +22,7 @@ _dy += _barh + 8;
 draw_sprite_stretched(spr_box, 0, _dx, _dy, _barw, _barh);
 draw_sprite_stretched_ext(spr_box, 1, _dx, _dy, _stamina_barw, _barh, c_green, 0.6);
 
-draw_text(_dx + _barw / 2, _dy + _barh / 2, "STAMINA: "+ string(stamina));
+draw_text(_dx + _barw / 2, _dy + _barh / 2, "STAMINA");
 
 //XP
 var _xp_barw = _barw * (xp / xp_require);
