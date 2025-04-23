@@ -2,8 +2,6 @@ if (alarm[0] < 0){
     hp -= other.damage;
     alarm[0] = 30;
     image_blend = c_red;
-    kb_x = sign(x - other.x);
-    kb_y = sign(y - other.y);
     audio_play_sound(snd_player_hit, 0, false);
     layer_set_visible("DamageShake", true);
     
