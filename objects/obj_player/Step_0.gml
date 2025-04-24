@@ -41,6 +41,12 @@ if (_hor != 0 or _ver != 0)
     else if (_hor < 0) sprite_index = spr_player_walk_left;
         
     facing = point_direction(0, 0, _hor, _ver);
+    
+    //Play walking sounds
+    //play walking on grass sound
+        if (!audio_is_playing(snd_walk_grass01) && !audio_is_playing(snd_walk_grass02)){
+            audio_play_sound(choose(snd_walk_grass01, snd_walk_grass02),1, false);
+        }
 }
 
 //Player not moving, change spr back to idle based on direction. 

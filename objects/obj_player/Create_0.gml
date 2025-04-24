@@ -2,6 +2,8 @@ move_speed = 1;
 
 //Check for collisions with Tiles_Col
 tilemap = [layer_tilemap_get_id("Tiles_Col"), obj_door_parent];
+tilemap_ground = layer_tilemap_get_id("Tiles_Back");
+
 
 //Player Stat Variables
 hp = 10;
