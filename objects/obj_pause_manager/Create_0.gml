@@ -1,3 +1,5 @@
+//Manages pausing the game and Gamepad support. 
+//(I just didn't want to create a second object. Hopefully doesn't break stuff...)
 paused = false;
 layer_name = "PauseLayer";
 

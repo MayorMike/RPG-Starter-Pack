@@ -4,6 +4,12 @@ if (instance_exists(obj_dialog)) exit;
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+var _gp = global.gamepad_main;
+if (_gp != undefined){
+    _hor += gamepad_axis_value(_gp, gp_axislh);
+    _ver += gamepad_axis_value(_gp, gp_axislv);
+}
+
 var _len = _hor!=0 || _ver!=0;
 var _dir = point_direction(0, 0, _hor, _ver);
 _hor = lengthdir_x(_len, _dir);
