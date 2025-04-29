@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_walk_stone02",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.094444446,
+  "name":"snd_walk_stone02",
+  "parent":{
+    "name":"walking",
+    "path":"folders/Sounds/walking.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_walk_stone02.ogg",
+  "type":1,
+  "volume":1.0,
+}

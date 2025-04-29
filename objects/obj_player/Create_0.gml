@@ -1,16 +1,24 @@
 move_speed = 1;
 
 //Check for collisions with Tiles_Col
-tilemap = layer_tilemap_get_id("Tiles_Col");
+tilemap = [layer_tilemap_get_id("Tiles_Col"), obj_door_parent];
+tilemap_ground = layer_tilemap_get_id("Tiles_Back");
 
+
+//Player Stat Variables
 hp = 10;
 hp_total = 10;
 damage = 1;
-charge = 0
-
+stamina = 50;
+stamina_total = 50;
+stamina_regen_timer = 0;
 level = 1
 xp = 0
 xp_require = 100
+
+moving = false;
+door_key = 0;//Number of door keys player is holding - Gold Key
+chest_key = 0; //Number of chest keys player is holding - Silver Key
 
 facing = 0;
 

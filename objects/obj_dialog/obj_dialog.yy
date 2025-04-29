@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_talk",
+    "path":"sprites/spr_talk/spr_talk.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
