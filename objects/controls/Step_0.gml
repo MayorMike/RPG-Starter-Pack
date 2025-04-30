@@ -14,7 +14,7 @@ key_right = keyboard_check(ord("D")) || (gamepad_axis_value(global.gamepad_main,
 
 key_attack = keyboard_check_pressed(vk_space) || (gamepad_button_check_pressed(global.gamepad_main, gp_face3));
 key_sprint = keyboard_check(vk_lshift) || (gamepad_button_check(global.gamepad_main, gp_face2));
-key_use = keyboard_check_pressed(ord("E")) || (gamepad_button_check_pressed(global.gamepad_main, gp_face4));
+key_action = keyboard_check_pressed(ord("E")) || (gamepad_button_check_pressed(global.gamepad_main, gp_face4));
 
 key_pause = keyboard_check_pressed(vk_escape) || (gamepad_button_check_pressed(global.gamepad_main, gp_start));
 

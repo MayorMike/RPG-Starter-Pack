@@ -8,4 +8,4 @@ key_down = false;
 key_pause = false;
 key_attack = false;
 key_sprint = false;
-key_use = false;
+key_action = false;
