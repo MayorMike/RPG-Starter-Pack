@@ -1,4 +1,4 @@
-//Manages pausing the game and Gamepad support. 
+//Manages pausing the game and Gamepad support for now. 
 //(I just didn't want to create a second object. Hopefully doesn't break stuff...)
 paused = false;
 layer_name = "PauseLayer";
@@ -6,6 +6,7 @@ layer_name = "PauseLayer";
 update_pause = function(){
     if (paused){
         instance_deactivate_all(true);
+        instance_activate_object(controls); // Game crashes if controls object is deactivated. 
         layer_set_visible(layer_name, true);
         show_debug_message("PauseLayer is now showing\nGame Paused");
     }

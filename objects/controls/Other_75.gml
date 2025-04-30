@@ -1,3 +1,4 @@
+/// @description Controls Gamepad Detection and Deadzone
 //Controls Gamepad detection and deadzone
 var _gamepad = async_load [? "pad_index"];
 
@@ -18,6 +19,5 @@ if array_length(global.gamepads) > 0{
     global.gamepad_main = global.gamepads[0];
 }
 else {
-global.gamepad_main = undefined;
+global.gamepad_main = 0;
 }
-

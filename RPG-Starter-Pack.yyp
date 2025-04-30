@@ -44,7 +44,9 @@
   "name":"RPG-Starter-Pack",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"Game Ideas","path":"notes/Game Ideas/Game Ideas.yy",},},
     {"id":{"name":"README","path":"notes/README/README.yy",},},
+    {"id":{"name":"controls","path":"objects/controls/controls.yy",},},
     {"id":{"name":"obj_attack","path":"objects/obj_attack/obj_attack.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_carry_data","path":"objects/obj_carry_data/obj_carry_data.yy",},},

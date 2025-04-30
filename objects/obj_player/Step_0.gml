@@ -2,8 +2,8 @@
 if (instance_exists(obj_dialog)) exit;
 
 //Keyboard movement controls
-var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+var _hor = controls.key_right - controls.key_left;
+var _ver = controls.key_down - controls.key_up;
 
 //Gamepad movement controls
 if (global.gamepad_main != undefined){
@@ -19,7 +19,7 @@ _ver = lengthdir_y(_len, _dir);
 //Keyboard Sprint Controls
 //Run when Left-Shift held down
 // Sprinting and Stamina
-if (keyboard_check(vk_lshift) && moving && stamina > 0) {
+if (controls.key_sprint && moving && stamina > 0) {
     move_speed = 1.5;
     stamina -= 0.5;
 
@@ -70,12 +70,12 @@ else {
 }
 
 //Keyboard attack controls
-if (keyboard_check_pressed(vk_space)){
+if (controls.key_attack){
     var _inst = instance_create_depth(x, y, depth, obj_attack);
     _inst.image_angle = facing;
     _inst.damage *= damage;
 }
-
+/*
 //Gamepad attack controls
 if (global.gamepad_main != undefined){
     if gamepad_button_check_pressed(global.gamepad_main, gp_face3){
@@ -84,6 +84,7 @@ if (global.gamepad_main != undefined){
         _inst.damage *= damage;
     }
 }
+*/
 
 //Restart game is HP = 0
 if (hp <= 0) {
