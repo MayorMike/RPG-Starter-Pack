@@ -75,6 +75,7 @@
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
     {"id":{"name":"Drawing","path":"scripts/Drawing/Drawing.yy",},},
     {"id":{"name":"gamepad_var","path":"scripts/gamepad_var/gamepad_var.yy",},},
+    {"id":{"name":"rebind_action","path":"scripts/rebind_action/rebind_action.yy",},},
     {"id":{"name":"snd_door_unlock","path":"sounds/snd_door_unlock/snd_door_unlock.yy",},},
     {"id":{"name":"snd_enemy_hit","path":"sounds/snd_enemy_hit/snd_enemy_hit.yy",},},
     {"id":{"name":"snd_key_pickup","path":"sounds/snd_key_pickup/snd_key_pickup.yy",},},

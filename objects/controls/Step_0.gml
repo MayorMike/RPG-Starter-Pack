@@ -1,4 +1,4 @@
-/// @description keybindings
+/// @description rebindable input check
 
 /* Face Button Mapping according to Xbox 360 Gamepad
  * face1 = A
@@ -7,14 +7,14 @@
  * face4 = Y
  * */
 
-key_up = keyboard_check(ord("W")) || (gamepad_axis_value(global.gamepad_main, gp_axislv) < 0);
-key_left = keyboard_check(ord("A")) || (gamepad_axis_value(global.gamepad_main, gp_axislv) > 0);
-key_down = keyboard_check(ord("S")) || (gamepad_axis_value(global.gamepad_main, gp_axislh) > 0);
-key_right = keyboard_check(ord("D")) || (gamepad_axis_value(global.gamepad_main, gp_axislh) < 0);
+// Keyboard movement
+key_up    = keyboard_check(kb_up)    || gamepad_axis_value(global.gamepad_main, gp_up) < -0.5;
+key_left  = keyboard_check(kb_left)  || gamepad_axis_value(global.gamepad_main, gp_left) < -0.5;
+key_down  = keyboard_check(kb_down)  || gamepad_axis_value(global.gamepad_main, gp_down) > 0.5;
+key_right = keyboard_check(kb_right) || gamepad_axis_value(global.gamepad_main, gp_right) > 0.5;
 
-key_attack = keyboard_check_pressed(vk_space) || (gamepad_button_check_pressed(global.gamepad_main, gp_face3));
-key_sprint = keyboard_check(vk_lshift) || (gamepad_button_check(global.gamepad_main, gp_face2));
-key_action = keyboard_check_pressed(ord("E")) || (gamepad_button_check_pressed(global.gamepad_main, gp_face4));
-
-key_pause = keyboard_check_pressed(vk_escape) || (gamepad_button_check_pressed(global.gamepad_main, gp_start));
-
+// Actions
+key_attack = keyboard_check_pressed(kb_attack) || gamepad_button_check_pressed(global.gamepad_main, gp_attack);
+key_sprint = keyboard_check(kb_sprint) || gamepad_button_check(global.gamepad_main, gp_sprint);
+key_action = keyboard_check_pressed(kb_action) || gamepad_button_check_pressed(global.gamepad_main, gp_action);
+key_pause  = keyboard_check_pressed(kb_pause)  || gamepad_button_check_pressed(global.gamepad_main, gp_pause);
