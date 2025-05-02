@@ -31,4 +31,12 @@ switch (button_id){
         layer_set_visible("KeybindsLayer", false);
         
     break;
+    
+    case 50: //Keybind for Keyboard Attack - Default Space
+        controls.kb_attack = vk_nokey;
+        show_debug_message("Key cleared.");
+    show_debug_message("Key is now set to:", controls.kb_attack);
+        
+        
+    case 51: //Keybind for Keyboard Use - Default "E"
 }
