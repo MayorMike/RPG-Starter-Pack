@@ -7,10 +7,12 @@ function rebind_action(action_name, input_type, new_input) {
     var prefix = (input_type == "keyboard") ? "kb_" : "gp_";
     var prop = prefix + string(action_name);
 
-    if (variable_instance_exists(controls, prop)) {
-        variable_instance_set(controls, prop, new_input);
+    var _controls = instance_find(controls, 0); // Get the instance of the controls object
+
+    if (_controls != noone && variable_instance_exists(_controls, prop)) {
+        variable_instance_set(_controls, prop, new_input);
     }
-     else {
+    else {
         show_debug_message("Invalid action or input type: " + prop);
     }
 }

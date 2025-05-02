@@ -14,6 +14,7 @@ update_pause = function(){
         instance_activate_all();
         layer_set_visible(layer_name, false);
         layer_set_visible("SettingsLayer", false);
+        layer_set_visible("KeybindsLayer", false);
         show_debug_message("PauseLayer is hidden\nGame Resume");
     }
 }

@@ -14,9 +14,21 @@ switch (button_id){
         game_end();
     break;
     
-    case 3: //Back from Settings
+    case 3: //Back from Settings to Pause
         layer_set_visible("PauseLayer", true);
         layer_set_visible("SettingsLayer", false);
+        
+    break;
+    
+    case 4: //Settings to Keybinds
+        layer_set_visible("KeybindsLayer", true);
+        layer_set_visible("SettingsLayer", false);
+        
+    break;
+    
+    case 20: //Back from Keybinds to Settings
+        layer_set_visible("SettingsLayer", true);
+        layer_set_visible("KeybindsLayer", false);
         
     break;
 }
