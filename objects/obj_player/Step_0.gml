@@ -1,15 +1,22 @@
 //Checks if dialog exists. If so, pauses player. 
 if (instance_exists(obj_dialog)) exit;
 
+var _hor = false;
+var _ver = false;
 //Keyboard movement controls
-var _hor = controls.key_right - controls.key_left;
-var _ver = controls.key_down - controls.key_up;
+//var _hor = controls.key_right - controls.key_left;
+//var _ver = controls.key_down - controls.key_up;
+if (InputCheck(INPUT_VERB.LEFT)) _hor = -1;
+if (InputCheck(INPUT_VERB.RIGHT)) _hor = 1;
+if (InputCheck(INPUT_VERB.UP)) _ver = -1;
+if (InputCheck(INPUT_VERB.DOWN)) _ver = 1;
+
 
 //Gamepad movement controls
-if (global.gamepad_main != undefined){
+/*if (global.gamepad_main != undefined){
     _hor += gamepad_axis_value(global.gamepad_main, gp_axislh);
     _ver += gamepad_axis_value(global.gamepad_main, gp_axislv);
-}
+}*/
 
 var _len = _hor!=0 || _ver!=0;
 var _dir = point_direction(0, 0, _hor, _ver);
@@ -19,7 +26,7 @@ _ver = lengthdir_y(_len, _dir);
 //Keyboard Sprint Controls
 //Run when Left-Shift held down
 // Sprinting and Stamina
-if (controls.key_sprint && moving && stamina > 0) {
+if ((InputCheck(INPUT_VERB.SPRINT)) && moving && stamina > 0) {
     move_speed = 1.5;
     stamina -= 0.5;
 
@@ -70,7 +77,7 @@ else {
 }
 
 //Keyboard attack controls
-if (controls.key_attack){
+if (InputPressed(INPUT_VERB.ATTACK)){
     var _inst = instance_create_depth(x, y, depth, obj_attack);
     _inst.image_angle = facing;
     _inst.damage *= damage;

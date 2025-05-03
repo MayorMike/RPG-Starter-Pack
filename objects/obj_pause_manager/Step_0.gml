@@ -1,5 +1,5 @@
 //Esc key toggles pause
-if (controls.key_pause){
+if (InputPressed(INPUT_VERB.PAUSE)){
     paused = !paused;
     update_pause();
 }

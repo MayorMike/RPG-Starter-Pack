@@ -3,11 +3,11 @@ if (current_message < 0) exit;
 var _str = messages[current_message].msg;
 
 if (current_char < string_length(_str)){
-    current_char += char_speed * (1 + real(controls.key_action));
+    current_char += char_speed * (1 + real((InputCheck(INPUT_VERB.DIALOG))));
     draw_message = string_copy(_str, 0, current_char);
 }
 //If finsihed drawing
-else if (controls.key_dialog) {
+else if (InputPressed(INPUT_VERB.DIALOG)) {
     current_message++;//Goes to next message in array
     if (current_message >= array_length(messages)){//Checks to see if there is another message in the array
         instance_destroy();
