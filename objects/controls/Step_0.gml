@@ -18,3 +18,4 @@ key_attack = keyboard_check_pressed(kb_attack) || gamepad_button_check_pressed(g
 key_sprint = keyboard_check(kb_sprint) || gamepad_button_check(global.gamepad_main, gp_sprint);
 key_action = keyboard_check_pressed(kb_action) || gamepad_button_check_pressed(global.gamepad_main, gp_action);
 key_pause  = keyboard_check_pressed(kb_pause)  || gamepad_button_check_pressed(global.gamepad_main, gp_pause);
+key_dialog = keyboard_check_pressed(kb_dialog) || gamepad_button_check_pressed(global.gamepad_main, gp_face4);
