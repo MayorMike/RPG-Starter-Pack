@@ -42,7 +42,7 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.ATTACK,  "attack",  undefined,   gp_face2); // !!
         InputDefineVerb(INPUT_VERB.SPRINT,  "sprint",  undefined,   gp_face1); // !!
         InputDefineVerb(INPUT_VERB.ACTION,  "action",  undefined,   gp_face3);
-        InputDefineVerb(INPUT_VERB.DIALOG, "dialog", undefined,   gp_face4);
+        InputDefineVerb(INPUT_VERB.DIALOG, "dialog", undefined,     gp_face4);
         InputDefineVerb(INPUT_VERB.PAUSE,   "pause",   undefined,   gp_start);
     }
     

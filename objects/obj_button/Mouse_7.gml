@@ -33,7 +33,7 @@ switch (button_id){
     break;
     
     case 50: //Keybind for Keyboard Attack - Default Space
-        
+        show_debug_message("Set new Keybind!");
         
     case 51: //Keybind for Keyboard Use - Default "E"
 }
