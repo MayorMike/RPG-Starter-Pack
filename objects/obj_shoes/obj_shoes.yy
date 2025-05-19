@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_shoes",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collect_parent","path":"objects/obj_collect_parent/obj_collect_parent.yy",},"propertyId":{"name":"item_type","path":"objects/obj_collect_parent/obj_collect_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Shoes",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collect_parent","path":"objects/obj_collect_parent/obj_collect_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_collect_parent/obj_collect_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Shoes",},
   ],
   "parent":{
     "name":"Items",
