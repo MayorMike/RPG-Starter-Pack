@@ -12,9 +12,11 @@ damage = 1;
 stamina = 50;
 stamina_total = 50;
 stamina_regen_timer = 0;
-level = 1
-xp = 0
-xp_require = 100
+level = 1;
+xp = 0;
+xp_require = 100;
+enemy_remaining = 0;
+enemy_total = 0;
 
 moving = false;
 door_key = 0;//Number of door keys player is holding - Gold Key
@@ -41,3 +43,6 @@ function add_xp(_xp_to_add){
         ])
     }
 }
+//Count # of enemies
+enemy_total = instance_number(obj_enemy_parent);
+enemy_remaining = enemy_total;

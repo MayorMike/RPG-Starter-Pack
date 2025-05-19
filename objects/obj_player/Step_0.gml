@@ -93,6 +93,8 @@ if (global.gamepad_main != undefined){
 }
 */
 
+
+
 //Restart game is HP = 0
 if (hp <= 0) {
     game_restart();
