@@ -26,7 +26,7 @@ _ver = lengthdir_y(_len, _dir);
 //Keyboard Sprint Controls
 //Run when Left-Shift held down
 // Sprinting and Stamina
-if ((InputCheck(INPUT_VERB.SPRINT)) && moving && stamina > 0) {
+if ((InputCheck(INPUT_VERB.SPRINT)) && moving && stamina > 0 && hasShoes) {
     move_speed = 1.5;
     stamina -= 0.5;
 

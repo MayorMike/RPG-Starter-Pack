@@ -8,5 +8,6 @@ with (obj_carry_data){
     other.stamina_total = stamina_total;
     other.chest_key = chest_key;
     other.door_key = door_key;
+    other.hasShoes = hasShoes;
     instance_destroy();
 }

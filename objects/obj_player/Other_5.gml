@@ -7,6 +7,7 @@ instance_create_depth(0, 0, 0, obj_carry_data, {
     hp: hp,
     stamina_total: stamina_total,
     chest_key: chest_key,
-    door_key: door_key
+    door_key: door_key,
+    hasShoes: hasShoes
 
 })
