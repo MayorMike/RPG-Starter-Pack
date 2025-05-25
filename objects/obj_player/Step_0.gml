@@ -62,9 +62,10 @@ if (_hor != 0 or _ver != 0)
     
     //Play walking sounds
     //play walking on grass sound
-        if (!audio_is_playing(snd_walk_grass01) && !audio_is_playing(snd_walk_grass02)){
+        /*if (!audio_is_playing(snd_walk_grass01) && !audio_is_playing(snd_walk_grass02)){
             audio_play_sound(choose(snd_walk_grass01, snd_walk_grass02),1, false);
-        }
+        }*/
+    
 }
 
 //Player not moving, change spr back to idle based on direction. 
@@ -93,6 +94,11 @@ if (global.gamepad_main != undefined){
 }
 */
 
+//Create Collect Items
+if (hasShoes == false && enemy_remaining = 0){
+    show_debug_message("Shoes Created!")
+    instance_create_layer(400, 190, "Instances", obj_shoes);
+}
 
 
 //Restart game is HP = 0

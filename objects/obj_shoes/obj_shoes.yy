@@ -37,5 +37,5 @@
     "path":"sprites/spr_shoes/spr_shoes.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
