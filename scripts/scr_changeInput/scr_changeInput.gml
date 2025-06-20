@@ -1,3 +1,12 @@
+function inputChangeKeybind(_name) {
+    var _keybind = inputChangeKeyboard(_name);
+    if (_keybind == -1) {
+        _keybind = inputChangeGamepad(_name);
+        
+    }
+    return (_keybind);
+}
+
 function inputChangeKeyboard(_name) {
     //Keybaord Check
     if (keyboard_check_pressed(vk_anykey)) {
@@ -26,6 +35,32 @@ function inputChangeKeyboard(_name) {
 }
 
 function inputChangeGamepad(_name) {
-    //Gamepad
-    
+    //Gamepad Buttons
+    if (gamepad_button_check_pressed(0, gp_padu)) {return (new BindGPB(_name, gp_padu))};
+    if (gamepad_button_check_pressed(0, gp_padl)) {return (new BindGPB(_name, gp_padl))};
+    if (gamepad_button_check_pressed(0, gp_padd)) {return (new BindGPB(_name, gp_padd))};
+    if (gamepad_button_check_pressed(0, gp_padr)) {return (new BindGPB(_name, gp_padr))};
+    if (gamepad_button_check_pressed(0, gp_face1)) {return (new BindGPB(_name, gp_face1))};
+    if (gamepad_button_check_pressed(0, gp_face2)) {return (new BindGPB(_name, gp_face2))};
+    if (gamepad_button_check_pressed(0, gp_face3)) {return (new BindGPB(_name, gp_face3))};
+    if (gamepad_button_check_pressed(0, gp_face4)) {return (new BindGPB(_name, gp_face4))};
+    if (gamepad_button_check_pressed(0, gp_start)) {return (new BindGPB(_name, gp_start))};
+    if (gamepad_button_check_pressed(0, gp_select)) {return (new BindGPB(_name, gp_select))};
+    if (gamepad_button_check_pressed(0, gp_shoulderl)) {return (new BindGPB(_name, gp_shoulderl))};
+    if (gamepad_button_check_pressed(0, gp_shoulderlb)) {return (new BindGPB(_name, gp_shoulderlb))};
+    if (gamepad_button_check_pressed(0, gp_shoulderr)) {return (new BindGPB(_name, gp_shoulderr))};
+    if (gamepad_button_check_pressed(0, gp_shoulderrb)) {return (new BindGPB(_name, gp_shoulderrb))};
+    if (gamepad_button_check_pressed(0, gp_stickl)) {return (new BindGPB(_name, gp_stickl))};
+    if (gamepad_button_check_pressed(0, gp_stickr)) {return (new BindGPB(_name, gp_stickr))};
+    //Gamepad Axis
+    if (gamepad_axis_value(0, gp_axislh) > 0.8) {return (new BindGPA(_name, gp_axislh, 0.5))}
+    if (gamepad_axis_value(0, gp_axislh) < -0.8) {return (new BindGPA(_name, gp_axislh, -0.5))}
+    if (gamepad_axis_value(0, gp_axislv) > 0.8) {return (new BindGPA(_name, gp_axislv, 0.5))}
+    if (gamepad_axis_value(0, gp_axislv) < -0.8) {return (new BindGPA(_name, gp_axislv, -0.5))}
+    if (gamepad_axis_value(0, gp_axisrh) > 0.8) {return (new BindGPA(_name, gp_axisrh, 0.5))}
+    if (gamepad_axis_value(0, gp_axisrh) < -0.8) {return (new BindGPA(_name, gp_axisrh, -0.5))}
+    if (gamepad_axis_value(0, gp_axisrv) > 0.8) {return (new BindGPA(_name, gp_axisrv, 0.5))}
+    if (gamepad_axis_value(0, gp_axisrv) < -0.8) {return (new BindGPA(_name, gp_axisrv, -0.5))}
+        
+    return(-1);
 }

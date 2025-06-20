@@ -4,7 +4,7 @@ if (keyboard_check_pressed(ord("K"))) {
 
 if (readingKeybind == true) {
     text = "Reading...";
-    var _newKeybind = inputChangeKeyboard("MoveUp");
+    var _newKeybind = inputChangeKeybind("MoveUp");
     if (_newKeybind != -1){
         inputReplace("MoveUp", _newKeybind);
         readingKeybind = false;

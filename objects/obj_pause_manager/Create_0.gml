@@ -7,6 +7,7 @@ update_pause = function(){
     if (paused){
         instance_deactivate_all(true);
         instance_activate_object(obj_input); //Prevents obj_input being deactivated
+        instance_activate_object(obj_keybindTest);
         layer_set_visible(layer_name, true);
         show_debug_message("PauseLayer is now showing\nGame Paused");
     }

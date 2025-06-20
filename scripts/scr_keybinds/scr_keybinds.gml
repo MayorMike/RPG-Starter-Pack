@@ -8,6 +8,7 @@ function initializeKeybinds(){
         new BindKB("Sprint", vk_lshift),
         new BindKB("Attack", vk_space),
         new BindKB("Action", ord("E")),
+        new BindKB("Dialog", ord("E")),
         new BindKB("Pause", vk_escape),
         ];
     }
@@ -20,6 +21,7 @@ function keybindings() {
     global.moveRight = inputCheckHeld("MoveRight");
     global.sprint = inputCheckHeld("Sprint");
     global.attack = inputCheckPressed("Attack");
-    global.action = inputCheckPressed("Action"); 
+    global.action = inputCheckPressed("Action");
+    global.dialog = inputCheckPressed("Dialog");
     global.pauseGame = inputCheckPressed("Pause");
 }
