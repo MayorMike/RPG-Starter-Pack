@@ -6,10 +6,12 @@ var _ver = false;
 //Keyboard movement controls
 //var _hor = controls.key_right - controls.key_left;
 //var _ver = controls.key_down - controls.key_up;
-if (InputCheck(INPUT_VERB.LEFT)) _hor = -1;
-if (InputCheck(INPUT_VERB.RIGHT)) _hor = 1;
-if (InputCheck(INPUT_VERB.UP)) _ver = -1;
-if (InputCheck(INPUT_VERB.DOWN)) _ver = 1;
+if (global.moveUp) _ver = -1;
+if (global.moveLeft) _hor = -1; 
+if (global.moveDown) _ver = 1;
+if (global.moveRight) _hor = 1;
+
+
 
 
 //Gamepad movement controls

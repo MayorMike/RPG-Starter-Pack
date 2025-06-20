@@ -1,0 +1,2 @@
+text = "INPUT";
+readingKeybind = false;
