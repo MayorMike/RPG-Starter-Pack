@@ -1,7 +1,7 @@
 function inputChangeKeyboard(_name) {
     //Keybaord Check
     if (keyboard_check_pressed(vk_anykey)) {
-        if (keyboard_lastkey != vk_escape) {
+        if (keyboard_lastkey != ord("K")) and (keyboard_lastkey != vk_escape) {
             var _struct = new BindKB(_name, keyboard_lastkey);
             return(_struct);
         }

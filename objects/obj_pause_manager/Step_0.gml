@@ -1,5 +1,5 @@
 //Esc key toggles pause
-if (InputPressed(INPUT_VERB.PAUSE)){
+if (global.pauseGame){
     paused = !paused;
     update_pause();
 }

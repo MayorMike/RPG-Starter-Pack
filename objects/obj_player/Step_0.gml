@@ -28,7 +28,7 @@ _ver = lengthdir_y(_len, _dir);
 //Keyboard Sprint Controls
 //Run when Left-Shift held down
 // Sprinting and Stamina
-if ((InputCheck(INPUT_VERB.SPRINT)) && moving && stamina > 0 && hasShoes) {
+if ((global.sprint) && moving && stamina > 0 && hasShoes) {
     move_speed = 1.5;
     stamina -= 0.5;
 
@@ -80,7 +80,7 @@ else {
 }
 
 //Keyboard attack controls
-if (InputPressed(INPUT_VERB.ATTACK)){
+if (global.attack){
     var _inst = instance_create_depth(x, y, depth, obj_attack);
     _inst.image_angle = facing;
     _inst.damage *= damage;

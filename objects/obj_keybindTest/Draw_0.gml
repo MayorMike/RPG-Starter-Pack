@@ -1,1 +1,1 @@
-draw_text(16, 16, text);
+draw_text(obj_player.x, obj_player.y + 2, text);
