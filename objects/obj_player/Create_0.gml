@@ -25,9 +25,11 @@ chest_key = 0; //Number of chest keys player is holding - Silver Key
 
 facing = 0;
 
-//Inventory - Should probably be an array or something... 
+//Inventory START - Should probably be an array or something... 
 //anything to make save file/carryover data easier. 
 hasShoes = false;
+
+//Inventory END
 
 function add_xp(_xp_to_add){
     xp += _xp_to_add;

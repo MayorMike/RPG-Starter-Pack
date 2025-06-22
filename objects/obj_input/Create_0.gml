@@ -13,3 +13,4 @@ rebindDialog = false;
 rebindPause = false;
 
 textID = false;
+keyID = false;
