@@ -21,6 +21,7 @@ function BindKB(_name, _key) constructor {
 }
 
 //Mouse Button
+
 function BindMB(_name, _key) constructor {
     bindName = _name;
     key = _key;

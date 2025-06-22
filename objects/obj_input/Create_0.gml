@@ -14,3 +14,4 @@ rebindPause = false;
 
 textID = false;
 keyID = false;
+bindingKeys = false;

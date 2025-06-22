@@ -3,6 +3,7 @@ inputUpdate();
 keybindings();
 
 if (rebindMoveUp == true) {
+    
         var _newKeybind = inputChangeKeybind("MoveUp");
     if (_newKeybind != -1){
         inputReplace("MoveUp", _newKeybind);
@@ -10,6 +11,7 @@ if (rebindMoveUp == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindMoveUp = false;
+        obj_input.bindingKeys = false;
         show_debug_message("MoveUp Key Set!");
     }
 }
@@ -21,6 +23,7 @@ if (rebindMoveLeft == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindMoveLeft = false;
+        obj_input.bindingKeys = false;
         show_debug_message("MoveLeft Key Set!");
     }
 }
@@ -32,6 +35,7 @@ if (rebindMoveDown == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindMoveDown = false;
+        obj_input.bindingKeys = false;;
         show_debug_message("MoveDown Key Set!");
     }
 }
@@ -43,6 +47,7 @@ if (rebindMoveRight == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindMoveRight = false;
+        obj_input.bindingKeys = false;
         show_debug_message("MoveRight Key Set!");
     }
 }
@@ -54,6 +59,7 @@ if (rebindSprint == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindSprint = false;
+        obj_input.bindingKeys = false;
         show_debug_message("Sprint Key Set!");
     }
 }
@@ -65,6 +71,7 @@ if (rebindAttack == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindAttack = false;
+        obj_input.bindingKeys = false;
         show_debug_message("Attack Key Set!");
     }
 }
@@ -76,6 +83,7 @@ if (rebindAction == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindAction = false;
+        obj_input.bindingKeys = false;
         show_debug_message("Action Key Set!");
     }
 }
@@ -87,6 +95,7 @@ if (rebindDialog == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindDialog = false;
+        obj_input.bindingKeys = false;
         show_debug_message("Dialog Key Set!");
     }
 }
@@ -98,6 +107,7 @@ if (rebindPause == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindPause = false;
+        obj_input.bindingKeys = false;
         show_debug_message("Pause Key Set!");
     }
 }
