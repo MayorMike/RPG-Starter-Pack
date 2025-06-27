@@ -97,7 +97,7 @@ if (global.gamepad_main != undefined){
 */
 
 //Create Collect Items
-if (hasShoes == false && enemy_remaining = 0){
+if (hasShoes == false and enemy_remaining == 0 and !instance_exists(obj_collect_parent)){
     show_debug_message("Shoes Created!")
     instance_create_layer(400, 190, "Instances", obj_shoes);
 }
