@@ -105,4 +105,11 @@ switch (button_id){
         textID = layer_text_get_id("KeybindsLayer", "button_text_pause");
         layer_text_text(textID, scr_keytostring(0));
     break;
+    case 59: //Keybind for Shoot - Default "Q"
+        show_debug_message("Set Shoot Keybind!");
+        obj_input.rebindShoot = true;
+        obj_input.bindingKeys = true;
+        textID = layer_text_get_id("KeybindsLayer", "button_text_shoot");
+        layer_text_text(textID, scr_keytostring(0));
+    break;
 }

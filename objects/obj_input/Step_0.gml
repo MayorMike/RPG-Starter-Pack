@@ -111,9 +111,21 @@ if (rebindPause == true) {
         show_debug_message("Pause Key Set!");
     }
 }
+if (rebindShoot == true) {
+    var _newKeybind = inputChangeKeybind("Shoot");
+    if (_newKeybind != -1){
+        inputReplace("Shoot", _newKeybind);
+        textID = layer_text_get_id("KeybindsLayer", "button_text_shoot");
+        keyID = keyboard_lastkey;
+        layer_text_text(textID, scr_keytostring(keyID));
+        rebindShoot = false;
+        obj_input.bindingKeys = false;
+        show_debug_message("Shoot Key Set!");
+    }
+}
 
-if keyboard_check_pressed(ord("L")) {
+/*if keyboard_check_pressed(ord("L")) {
     textID = layer_text_get_id("KeybindsLayer", "button_text_MoveUp");
     layer_text_text(textID, keyboard_string);
     textID = false;
-}
+}*/

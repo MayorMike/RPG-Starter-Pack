@@ -11,6 +11,7 @@ rebindAttack = false;
 rebindAction = false;
 rebindDialog = false;
 rebindPause = false;
+rebindShoot = false;
 
 textID = false;
 keyID = false;

@@ -10,6 +10,7 @@ function initializeKeybinds(){
         new BindKB("Action", ord("E")),
         new BindKB("Dialog", ord("E")),
         new BindKB("Pause", vk_escape),
+        new BindKB("Shoot", ord("Q")),
         ];
     }
 }
@@ -24,4 +25,5 @@ function keybindings() {
     global.action = inputCheckPressed("Action");
     global.dialog = inputCheckPressed("Dialog");
     global.pauseGame = inputCheckPressed("Pause");
+    global.shoot = inputCheckPressed("Shoot");
 }
