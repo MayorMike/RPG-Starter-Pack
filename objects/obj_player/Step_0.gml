@@ -104,7 +104,7 @@ if (global.levelID == 1 and hasShoes == false and enemy_remaining == 0 and !inst
 
 if (global.levelID == 2 and hasBow == false and enemy_remaining == 0 and !instance_exists(obj_collect_parent)){
     show_debug_message("Bow Created!");
-    instance_create_layer(140, 111, "Instances", obj_shoes);
+    instance_create_layer(140, 111, "Instances", obj_bow);
 }
 
 

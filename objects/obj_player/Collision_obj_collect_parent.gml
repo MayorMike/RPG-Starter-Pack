@@ -4,6 +4,9 @@ switch (obj_collect_parent.item_name) {
         show_debug_message("Collected shoes!");
         hasShoes = true;
     break;
-    
+    case "Bow":
+        show_debug_message("Collected bow!");
+        hasBow = true;
+    break;
 }
 instance_destroy(other);
