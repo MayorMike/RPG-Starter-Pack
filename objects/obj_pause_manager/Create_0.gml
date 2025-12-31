@@ -3,6 +3,10 @@
 paused = false;
 layer_name = "PauseLayer";
 
+//Level ID controller. Tells the game what level it is on in a persistent object. 
+//Denotes what level player is in. Controls collectibles/upgrades.
+global.levelID = 1; 
+
 update_pause = function(){
     if (paused){
         instance_deactivate_all(true);

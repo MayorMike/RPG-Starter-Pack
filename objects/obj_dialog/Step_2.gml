@@ -12,7 +12,9 @@ else if (global.dialog) {
     if (current_message >= array_length(messages)){//Checks to see if there is another message in the array
         instance_destroy();
         
-        if (next_room) room_goto_next();
+        if (next_room) {
+            room_goto_next();
+        }
     }
     else {
         current_char = 0;//If there is, start from beginning and display message

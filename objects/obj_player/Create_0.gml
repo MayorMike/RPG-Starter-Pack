@@ -1,5 +1,4 @@
 move_speed = 1;
-levelID = 1; //Denotes what level player is in. Controls collectibles/upgrades.
 //Check for collisions with Tiles_Col
 tilemap = [layer_tilemap_get_id("Tiles_Col"), obj_door_parent];
 tilemap_ground = layer_tilemap_get_id("Tiles_Back");

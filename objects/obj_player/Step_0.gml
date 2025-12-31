@@ -28,7 +28,7 @@ _ver = lengthdir_y(_len, _dir);
 //Keyboard Sprint Controls
 //Run when Left-Shift held down
 // Sprinting and Stamina
-if ((global.sprint) and moving and stamina > 0 && hasShoes) {
+if ((global.sprint) and moving and stamina > 0 and hasShoes) {
     move_speed = 1.5;
     stamina -= 0.5;
 
@@ -97,12 +97,12 @@ if (global.gamepad_main != undefined){
 */
 
 //Create Collect Items
-if (levelID == 1 and hasShoes == false and enemy_remaining == 0 and !instance_exists(obj_collect_parent)){
+if (global.levelID == 1 and hasShoes == false and enemy_remaining == 0 and !instance_exists(obj_collect_parent)){
     show_debug_message("Shoes Created!");
     instance_create_layer(400, 190, "Instances", obj_shoes);
 }
 
-if (levelID == 2 and hasBow == false and enemy_remaining == 0 and !instance_exists(obj_collect_parent)){
+if (global.levelID == 2 and hasBow == false and enemy_remaining == 0 and !instance_exists(obj_collect_parent)){
     show_debug_message("Bow Created!");
     instance_create_layer(140, 111, "Instances", obj_shoes);
 }
