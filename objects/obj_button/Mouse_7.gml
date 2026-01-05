@@ -112,4 +112,8 @@ switch (button_id){
         textID = layer_text_get_id("KeybindsLayer", "button_text_shoot");
         layer_text_text(textID, scr_keytostring(0));
     break;
+    case 100: //Save Keybinds Button - Save keybinds to file
+        
+    break;
+    
 }
