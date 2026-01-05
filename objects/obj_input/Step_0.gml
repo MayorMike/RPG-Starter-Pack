@@ -35,7 +35,7 @@ if (rebindMoveDown == true) {
         keyID = keyboard_lastkey;
         layer_text_text(textID, scr_keytostring(keyID));
         rebindMoveDown = false;
-        obj_input.bindingKeys = false;;
+        obj_input.bindingKeys = false;
         show_debug_message("MoveDown Key Set!");
     }
 }

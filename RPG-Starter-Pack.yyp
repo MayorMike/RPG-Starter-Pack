@@ -40,6 +40,7 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"gamecontrollerdb.txt","CopyToMask":-1,"filePath":"datafiles","name":"gamecontrollerdb.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"keybinds.ini","CopyToMask":-1,"filePath":"datafiles","name":"keybinds.ini","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],

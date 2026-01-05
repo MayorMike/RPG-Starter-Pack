@@ -27,3 +27,10 @@ function keybindings() {
     global.pauseGame = inputCheckPressed("Pause");
     global.shoot = inputCheckPressed("Shoot");
 }
+
+function save_keybinds(){
+    keybindings();
+    ini_open("keybinds.ini");
+    ini_write_real("keybinds", "MoveUp", vk_lshift);
+    ini_close();
+}
