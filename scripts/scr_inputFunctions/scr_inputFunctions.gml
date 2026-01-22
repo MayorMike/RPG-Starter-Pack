@@ -6,7 +6,7 @@ function BindKB(_name, _key) constructor {
     key = _key;
     
     pressed = false;
-    help = false;
+    held = false;
     released = false;
     
     pressedFn = function(){
@@ -27,7 +27,7 @@ function BindMB(_name, _key) constructor {
     key = _key;
     
     pressed = false;
-    help = false;
+    held = false;
     released = false;
     
     pressedFn = function(){
@@ -47,7 +47,7 @@ function BindMW(_name, _dir) constructor {
     dir = sign(_dir);
     
     pressed = false;
-    help = false;
+    held = false;
     released = false;
     
     
@@ -77,7 +77,7 @@ function BindGPB(_name, _key) constructor {
     key = _key;
     
     pressed = false;
-    help = false;
+    held = false;
     released = false;
     
     pressedFn = function(){

@@ -28,9 +28,15 @@ function keybindings() {
     global.shoot = inputCheckPressed("Shoot");
 }
 
-function save_keybinds(){
-    keybindings();
+function save_keybinds() {
     ini_open("keybinds.ini");
-    ini_write_real("keybinds", "MoveUp", vk_lshift);
+
+    with (obj_input) {
+        for (var i = 0; i < array_length(keybinds); i++) {
+            var bind = keybinds[i];
+            ini_write_real("keybinds", bind.bindName, bind.key);
+        }
+    }
+
     ini_close();
 }
